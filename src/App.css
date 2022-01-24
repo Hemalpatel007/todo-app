@@ -3,52 +3,74 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #282c34;
+  background-color: #A9A9A9;
 }
 
 .container {
   display: flex;
-  height: 80vh;
-  border: 1px solid grey;
-  padding: 20px;
+  min-height: 80vh;
+  padding: 40px;
   flex-direction: column;
   align-items: center;
   font-size: 20px;
   color: #fff;
+  border-radius: 100px;
 }
 
 .todoForm{
   display: flex;
-  justify-content: space-around;
-  width: 450px; 
+  width: 100%; 
 }
 
 input {
   width: 80%;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 30px 0 0 30px;
   border: none;
 }
 
-button {
+.sum-btn{
+  border-radius: 0px 30px 30px 0;
+  margin: 0;
+  width: 120px;
   border: none;
-  padding: 10px;
-  border-radius:  20px;
-  margin:  05px;
+  font-size: 22px;
+  background-color: #008CBA;
+  color: #ffffff;
 }
+
+.edit-btn{
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin:  05px;
+  color: #ffffff;
+  background-color: #4CAF50;
+}
+
+.del-btn{
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 0;
+  background-color: #D83A3A;
+  color: #ffffff;
+}
+
 .allTodos {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 .singleTodo{
   border-radius: 50px;
-  margin:  10px 0;
-  background-color: #5dadf8;
-  padding: 10px 20px;
+  margin:  5px 0;
+  background-color: #ffffff;
+  padding: 2px 20px;
   display: flex;
-  width: 450px;
+  width: 350px;
   align-items: center;
+  color: #202020;
 }
 .todoText {
   flex: 1;
